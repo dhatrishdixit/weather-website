@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    background: url('https://source.unsplash.com/1600x900?landscape');
+}
+
+
+/*  important -
+yaha par max width ko 420 px set karte hai aur width ko 100% jiska matlab hai ki jab width display ka420 se kam hoga ya 420 ke equal hogatohwo pura display lega aur agar 420 se jyada width ho ga toh 420px ka width lega aur sath mwin margin bhi dal dete hai kipura hi screen na le kisi bhi situation mei */
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* button {
+    margin: 0.5em;
+    border-radius: 40%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+} */
+
+button {
+    color: white;
+    margin: 0.5em;
+    border-radius: 0.6em;
+    /* border-radius: 40%; */
+    border: 0.1em solid #7c7c7c2b;
+    height: 2.3em;
+    width: 2.3em;
+    transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s, border-radius 0.3s;
+    outline: none;
+    background: #7c7c7c2b;
+}
+
+button:hover {
+    border-color: white;
+    color: white;
+    /* box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c; */
+    /* transform: translateY(-0.25em); */
+    cursor: pointer;
+}
+
+button:active {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-radius: 1em;
+    box-shadow: 0px 0px 0 0;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    /* height: 2.5em; */
+    padding: 0.4em 1em;
+    background: #7c7c7c2b;
+    border-radius: 25px;
+    font-size: 100%;
+    font-family: inherit;
+    color: white;
+    /* remember adding space between + or - in calc() function */
+    width: calc(100% - 100px);
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.temp {
+    margin-bottom: 0.2em;
+}
+
+.humidity {
+    margin: 0.2em 0;
+}
+
+.wind {
+    margin: 0.2em 0;
+}
+
+.feels {
+    margin: 0.2em 0;
+}
+
+.description {
+    margin-left: 1em;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading......";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.credit {
+    background: #ffffff00;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .first {
+    margin-right: 15%;
+} */
